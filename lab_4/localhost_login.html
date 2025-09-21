@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <h1>Войти</h1>
+        <div>
+            <div>
+                <img src="profile_picture.png" alt="Профиль">
+            </div>
+            <form action="/login" method="post">
+                <div>
+                    <label for="username">Электропочта:</label> 
+                    <input type="text" id="username" name="username">
+                    <p>Введите электропочту в формате *****@***.**</p>
+                </div>
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password">
+                    <img src="Eye-off.png" alt="Скрыть пароль">
+                </div>
+                <div>
+                    <button type="submit" style="background-color: black; color: white">Продолжить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

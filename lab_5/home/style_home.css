@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    font-family: "Golos Text";
+    height: 100vh;
+}
+
+.item-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.nickname {
+    font-weight: 500;
+    font-size: 14px;
+    color: #222222;
+}
+.Buttom_change {
+    width: 24px;
+    height: 24px;
+}
+
+.photo {
+    width: 474px;
+    height: 474px;
+    top: 64px;
+}
+
+.reaction-symbol{
+    width: 68px;
+    height: 30px;
+    top: 554px;
+    border-radius: 8px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 15px;   
+    line-height: 18px;
+    letter-spacing: -0.15px; 
+    color: #222222;
+}
+
+.dop-text {
+    font-weight: 400;
+    font-size: 15px;   
+    line-height: 18px;
+    letter-spacing: -0.15px; 
+    color: #808080;
+}
+
+.time {
+    font-weight: 400;
+    font-size: 14px;   
+    line-height: 18px;
+    letter-spacing: -0.15px; 
+    color: #808080;    
+}
+
+

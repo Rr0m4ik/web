@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+    <title>Login</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+        rel="stylesheet"
+    />
+
+</head>
+<body>
+    <div>
+        <h1>Войти</h1>
+        <div>
+            <img class="picture"; src="../src/images/profile_picture.png" alt="Профиль">
+            <form action="/login" method="post">
+                <div>
+                    <label for="username">Электропочта:</label> 
+                    <input type="text" id="username" name="username">
+                    <p class="hint-text">Введите электропочту в формате *****@***.**</p>
+                </div>
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password">
+                    <img src="../src/assets/Eye-off.png" alt="Скрыть пароль">
+                </div>
+                <div>
+                    <button>Продолжить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ваня Денисов",
+      "avatar": "../src/images/Avatar_1.png",
+      "bio": "Привет! Я системный аналитик в ACME :) Тут моя жизнь только для самых классных!",
+      "posts_count": 43,
+      "posts": [
+        "../src/images/profile/1_street.jpg",
+        "../src/images/profile/2_building.jpg",
+        "../src/images/profile/3_cake.jpg",
+        "../src/images/profile/4_iSpring_team.jpg",
+        "../src/images/profile/5_coffee.jpg",
+        "../src/images/profile/6_book.jpg",
+        "../src/images/profile/7_gates.jpg",
+        "../src/images/profile/8_brat.jpg",
+        "../src/images/profile/9_pot.jpg",
+        "../src/images/profile/10_Bridge.jpg",
+        "../src/images/profile/11_forest.jpg",
+        "../src/images/profile/12_mountain.jpg",
+        "../src/images/profile/13_telescope.jpg",
+        "../src/images/profile/14_burger.jpg",
+        "../src/images/profile/15_flower.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Лиза Дёмина",
+      "avatar": "../src/images/Avatar_2.png",
+      "bio": "Я люблю путешествовать и делиться впечатлениями! Присоединяйтесь к моему миру :)",
+      "posts_count": 27,
+      "posts": [
+        "../src/images/profile/16_sunset.jpg",
+        "../src/images/profile/17_beach.jpg",
+        "../src/images/profile/18_city.jpg",
+        "../src/images/profile/19_forest.jpg",
+        "../src/images/profile/20_mountain.jpg",
+        "../src/images/profile/21_river.jpg",
+        "../src/images/profile/22_lake.jpg",
+        "../src/images/profile/23_field.jpg",
+        "../src/images/profile/24_village.jpg",
+        "../src/images/profile/25_castle.jpg"
+      ]
+    }
+  ]
+}

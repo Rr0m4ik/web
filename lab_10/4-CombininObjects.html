@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Объединение объектов</title>
+    </head>
+    <div>
+        <h3>Объединение объектов</h3>
+        <input type="text" id="obj1" placeholder='(например, {"a":1, "b":2})' />
+        <input type="text" id="obj2" placeholder='(например, {"b":3, "c":4})' />
+        <button onclick="mergeObjectsUI()">Объединить</button>
+        <div id="result4"></div>
+    </div>
+
+    <script>
+        function mergeObjects(obj1, obj2) {
+            return { ...obj1, ...obj2 };
+        }
+
+        function mergeObjectsUI() {
+            try {
+                const obj1 = JSON.parse(document.getElementById("obj1").value);
+                const obj2 = JSON.parse(document.getElementById("obj2").value);
+                const result = mergeObjects(obj1, obj2);
+                document.getElementById("result4").innerHTML =
+                    JSON.stringify(result);
+            } catch {
+                document.getElementById("result4").innerHTML = "Ошибка ввода!";
+            }
+        }
+    </script>
+</html>

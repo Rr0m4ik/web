@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Подсчет гласных</title>
+    </head>
+    <body>
+        <div>
+            <h3>Map и Filter</h3>
+            <input
+                type="text"
+                id="inputNumbers"
+                placeholder="Введите числа через запятую"
+            />
+            <button onclick="processNumbers()">Обработать</button>
+            <div id="result"></div>
+        </div>
+
+        <script>
+            function processNumbers() {
+                const input = document
+                    .getElementById("inputNumbers")
+                    .value.split(",")
+                    .map(Number);
+                const mapped = input
+                    .map((x) => x * 3)
+                    .filter((x) => x > 10);
+                document.getElementById("result").innerHTML = `
+                    После map: [${mapped}]<br>
+                    После filter: [${filtered}]
+                `;
+            }
+        </script>
+    </body>
+</html>

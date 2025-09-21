@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Подсчет гласных</title>
+    </head>
+    <body>
+        <div>
+            <h3>Map для объекта</h3>
+            <input
+                type="text"
+                id="inputObj"
+                placeholder='(например, {"a":1, "b":2})'
+            />
+            <button onclick="mapObjectUI()">Применить x2</button>
+            <div id="result6"></div>
+        </div>
+
+        <script>
+            function mapObject(obj, callback) {
+                return Object.fromEntries(
+                    Object.entries(obj).map(([k, v]) => [k, callback(v)]),
+                );
+            }
+
+            function mapObjectUI() {
+                try {
+                    const obj = JSON.parse(
+                        document.getElementById("inputObj").value,
+                    );
+                    const result = mapObject(obj, (x) => x * 2);
+                    document.getElementById("result6").innerHTML =
+                        JSON.stringify(result);
+                } catch {
+                    document.getElementById("result6").innerHTML =
+                        "Ошибка ввода!";
+                }
+            }
+        </script>
+    </body>
+</html>

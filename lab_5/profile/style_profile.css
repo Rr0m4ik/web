@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    font-family: "Golos Text";
+}
+
+.item-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 123px;
+    height: 123px;
+    border-radius: 16px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+}
+
+.posts-simbol {
+    width: 16px;
+    height: 16px;  
+}
+
+.posts-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color:  #222222; 
+}
+
+.photo img {
+    width: 322.35px;
+    height: 322.35px;
+    border-radius: 2px;
+    border-color: #b4b4b4;
+}
+

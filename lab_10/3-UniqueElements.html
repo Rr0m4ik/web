@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Подсчет гласных</title>
+    </head>
+    <body>
+        <div>
+            <h3>Уникальные элементы</h3>
+            <input
+                type="text"
+                id="inputArr"
+                placeholder="Введите элементы через запятую"
+            />
+            <button onclick="uniqueElementsUI()">Посчитать</button>
+            <div id="result3"></div>
+        </div>
+
+        <script>
+            function uniqueElements(arr) {
+                return arr.reduce((acc, item) => {
+                    const key = String(item);
+                    acc[key] = (acc[key] || 0) + 1;
+                    return acc;
+                }, {});
+            }
+
+            function uniqueElementsUI() {
+                const input = document
+                    .getElementById("inputArr")
+                    .value.split(",")
+                    .map((x) => x.trim());
+                const result = uniqueElements(input);
+                document.getElementById("result3").innerHTML =
+                    JSON.stringify(result);
+            }
+        </script>
+    </body>
+</html>

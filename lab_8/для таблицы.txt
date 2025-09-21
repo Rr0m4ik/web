@@ -1,0 +1,29 @@
+### Как использовать MySQL и SQL-файлы в Laragon
+
+#### 1. Создайте базу данных
+В терминале:
+mysql -u root -p -e "DROP DATABASE IF EXISTS blog; CREATE DATABASE blog CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+
+
+#### 2. Запустите SQL-файлы
+Создать таблицы:
+mysql -u root -p blog < D:\Web\lab_8\data\sql\tables.sql
+
+Добавить данные:
+mysql -u root -p blog < D:\Web\lab_8\data\sql\posts.sql
+
+
+#### 3. Войдите в MySQL
+Войдите в MySQL:
+mysql -u root -p
+
+
+#### 4. Проверьте базу
+И выполните:
+USE blog;
+SHOW TABLES;
+SELECT * FROM posts;
+SELECT * FROM users;
+
+
+База данных готова к работе с PHP или Laravel.

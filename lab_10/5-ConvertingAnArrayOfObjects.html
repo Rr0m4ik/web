@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Подсчет гласных</title>
+    </head>
+    <body>
+        <div>
+            <h3>Имена пользователей</h3>
+            <button onclick="showUserNames()">Показать имена</button>
+            <div id="result5"></div>
+        </div>
+
+        <script>
+            const users = [
+                { id: 1, name: "Alice" },
+                { id: 2, name: "Bob" },
+                { id: 3, name: "Charlie" },
+            ];
+
+            function showUserNames() {
+                const names = users.map((user) => user.name);
+                document.getElementById("result5").innerHTML =
+                    JSON.stringify(names);
+            }
+        </script>
+    </body>
+</html>
